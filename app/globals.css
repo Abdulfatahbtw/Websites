@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.transition-1 { transition: 0.1s; }
+.transition-2 { transition: 0.2s; }
+.transition-3 { transition: 0.3s; }
+.transition-5 { transition: 0.5s; }
+.transition-7 { transition: 0.7s; }
+
+.bg-svg1
+{
+  background-image: url('../public/a.svg');
+  background-size: cover;
+}
+
+.bg-svg2
+{
+  background-image: url('../public/b.svg');
+  background-size: cover;
+}
+
+.bg-hero
+{
+  background-image: url('../public/a.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.bg-about
+{
+  background-image: url('../public/b.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+@media screen and (max-width:980px) {
+  .bg-hero
+  {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .bg-about
+  {
+    background-position: bottom;
+    background-size: 50%;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .bg-about
+  {
+    background-position: bottom;
+    background-size: 70%;
+  }
+}
+
+@media screen and (max-width:720px) {
+  .bg-about
+  {
+    background-position: bottom;
+    background-size: contain;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.fdgr
+{
+  background: linear-gradient(90deg, white, transparent 10%, transparent 90%, white);
+}
